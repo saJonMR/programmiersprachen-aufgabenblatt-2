@@ -21,5 +21,17 @@ public:
     void SetX(const float x);
     void SetY(const float y);
 
+    Vec2& operator +=(const Vec2& v);
+    Vec2& operator -=(const Vec2& v);
+    Vec2& operator *=(float s);
+    Vec2& operator /=(float s);
+
+    friend std::ostream& operator<<(std::ostream& os, const Vec2& other);
+    friend std::istream& operator>>(std::istream& is, Vec2& other);
+
 };
+
+std::ostream& operator<<(std::ostream& os, const Vec2& other);
+std::istream& operator>>(std::istream& is, Vec2& other);
+
 #endif // VEC2_HPP
