@@ -13,7 +13,6 @@ private:
 public:
     Vec2();
     Vec2(float x, float y);
-    ~Vec2();
 
     float GetX() const;
     float GetY() const;
@@ -33,5 +32,7 @@ public:
 
 std::ostream& operator<<(std::ostream& os, const Vec2& other);
 std::istream& operator>>(std::istream& is, Vec2& other);
+
+
 
 #endif // VEC2_HPP
