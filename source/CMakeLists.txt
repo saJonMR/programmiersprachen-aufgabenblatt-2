@@ -19,4 +19,9 @@ add_executable(vec2
   vec2.cpp
   )
 
+# Build mat2
+add_executable(mat2
+  mat2.cpp
+  )
+
 
